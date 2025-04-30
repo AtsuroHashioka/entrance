@@ -21,6 +21,13 @@ const images = [
     // 必要に応じて追加
 ];
 
+const preloadedImages = [];
+for (let i = 0; i < images.length; i++) {
+    const img = new Image();
+    img.src = images[i];
+    preloadedImages.push(img);
+}
+
 // ランダムに画像を選択する関数
 function getRandomImage() {
     return images[Math.floor(Math.random() * images.length)];
