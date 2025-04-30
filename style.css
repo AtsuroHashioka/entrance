@@ -52,6 +52,22 @@ header {
     margin-bottom: 12rem;
 }
 
+/* タイトルのスライドアニメーション */
+#title div{
+    animation: bottomup 3s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes bottomup {
+    from {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 /* フェードインする文字の初期状態 */
 .char {
     opacity: 0; /* 最初は非表示 */
