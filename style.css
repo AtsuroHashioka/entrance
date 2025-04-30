@@ -37,6 +37,18 @@ header {
     color: #fff;
     text-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0,1);
     padding-top: 24rem;
+    animation: slideIn 0.5s linear forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-15rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 #title-line-2 {
@@ -50,22 +62,6 @@ header {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 12rem;
-}
-
-/* タイトルのスライドアニメーション */
-#title div{
-    animation: bottomup 0.5s linear forwards;
-}
-
-@keyframes bottomup {
-    from {
-        opacity: 0;
-        transform: translateY(15rem);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
 }
 
 /* フェードインする文字の初期状態 */
