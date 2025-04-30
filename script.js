@@ -1,17 +1,17 @@
 // 画像ファイルの配列
 const images = [
-    'photos/beach.JPG',
-    'photos/books.JPG',
-    'photos/cosmos.JPG',
-    'photos/fall.JPG',
-    'photos/graduate.JPG',
-    'photos/momiji.JPG',
-    'photos/rose.JPG',
-    'photos/sakura.JPG',
-    'photos/soni.JPG',
-    'photos/sunset.JPG',
-    'photos/ukimi.JPG',
-    'photos/ume.JPG',
+    'photos/beach.webp',
+    'photos/books.webp',
+    'photos/cosmos.webp',
+    'photos/fall.webp',
+    'photos/graduate.webp',
+    'photos/momiji.webp',
+    'photos/rose.webp',
+    'photos/sakura.webp',
+    'photos/soni.webp',
+    'photos/sunset.webp',
+    'photos/ukimi.webp',
+    'photos/ume.webp',
     // 必要に応じて追加
 ];
 
