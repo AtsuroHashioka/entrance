@@ -8,7 +8,7 @@ const images = [
     'photos/fall.JPG',
     'photos/frog.JPG',
     'photos/graduate.JPG',
-    'photos/hiroshima.JPG',
+    'photos/ine.JPG',
     'photos/momiji.JPG',
     'photos/rose.JPG',
     'photos/plane.JPG',
@@ -49,13 +49,13 @@ const TL2 = document.getElementById('title-line-2');
 const text = TL2.textContent;
 TL2.innerHTML = ''; // 元のテキストをクリア
 
-const animationDuration = 0.2; // アニメーションの基本 duration（秒）
-const delayIncrement = 0.5; // 文字ごとの遅延増加量（秒）
+const animationDuration = 1; // アニメーションの基本 duration（秒）
+const delayIncrement = 0.25; // 文字ごとの遅延増加量（秒）
 
 for (let i = 0; i < text.length; i++) {
     const span = document.createElement('span');
     span.classList.add('char');
     span.textContent = text[i];
-    span.style.animation = `fadeIn ${animationDuration}s ease-in-out ${delayIncrement * (i + 1)}s forwards`;
+    span.style.animation = `fadeIn ${animationDuration}s ease-in ${delayIncrement * (i + 1)}s forwards`;
     TL2.appendChild(span);
 }

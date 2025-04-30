@@ -52,6 +52,16 @@ header {
     margin-bottom: 12rem;
 }
 
+.char {
+    opacity: 0; /* 最初は非表示 */
+  }
+  
+  /* アニメーションの定義 */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
 /* ヘッダリンクボタン */
 .buttons {
     padding: 4rem;
