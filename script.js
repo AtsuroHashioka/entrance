@@ -30,7 +30,7 @@ for (let i = 0; i < images.length; i++) {
 
 // ランダムに画像を選択する関数
 function getRandomImage() {
-    return images[Math.floor(Math.random() * images.length)];
+    return preloadedImages[Math.floor(Math.random() * preloadedImages.length)];
 }
 
 // ランダムに1つ選んで適用
