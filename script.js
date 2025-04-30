@@ -51,6 +51,6 @@ for (let i = 0; i < text.length; i++) {
     const span = document.createElement('span');
     span.classList.add('char');
     span.textContent = text[i];
-    span.style.animation = `fadeIn ${animationDuration}s ease-in ${delayIncrement * (i + 1)}s forwards`;
+    span.style.animation = `fadeIn ${animationDuration}s ease-in ${delayIncrement * (i + 1) + 0.5}s forwards`;
     TL2.appendChild(span);
 }
