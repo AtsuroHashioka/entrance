@@ -8,6 +8,7 @@ const images = [
     'photos/hiroshima.JPG',
     'photos/momiji.JPG',
     'photos/rose.JPG',
+    'photos/plane.JPG',
     'photos/sakura.JPG',
     'photos/sky.JPG',
     'photos/soni.JPG',
