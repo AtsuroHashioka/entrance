@@ -1,22 +1,15 @@
 // 画像ファイルの配列
 const images = [
-    'photos/arima.JPG',
     'photos/beach.JPG',
     'photos/books.JPG',
     'photos/cosmos.JPG',
-    'photos/dish.JPG',
     'photos/fall.JPG',
-    'photos/frog.JPG',
     'photos/graduate.JPG',
-    'photos/ine.JPG',
     'photos/momiji.JPG',
     'photos/rose.JPG',
-    'photos/plane.JPG',
     'photos/sakura.JPG',
-    'photos/sky.JPG',
     'photos/soni.JPG',
     'photos/sunset.JPG',
-    'photos/thai.JPG',
     'photos/ukimi.JPG',
     'photos/ume.JPG',
     // 必要に応じて追加
