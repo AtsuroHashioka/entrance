@@ -44,8 +44,8 @@ const TL2 = document.getElementById('title-line-2');
 const text = TL2.textContent;
 TL2.innerHTML = ''; // 元のテキストをクリア
 
-const animationDuration = 1; // アニメーションの基本 duration（秒）
-const delayIncrement = 0.25; // 文字ごとの遅延増加量（秒）
+const animationDuration = 0.5; // アニメーションの基本 duration（秒）
+const delayIncrement = 0.1; // 文字ごとの遅延増加量（秒）
 
 for (let i = 0; i < text.length; i++) {
     const span = document.createElement('span');
