@@ -54,13 +54,13 @@ header {
 
 /* タイトルのスライドアニメーション */
 #title div{
-    animation: bottomup 3s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    animation: bottomup 3s ease forwards;
 }
 
 @keyframes bottomup {
     from {
         opacity: 0;
-        transform: translateY(50%);
+        transform: translateY(10rem);
     }
     to {
         opacity: 1;
