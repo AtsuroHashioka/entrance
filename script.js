@@ -5,6 +5,7 @@ const images = [
     'photos/books.JPG',
     'photos/dish.JPG',
     'photos/graduate.JPG',
+    'photos/hiroshima.JPG',
     'photos/momiji.JPG',
     'photos/rose.JPG',
     'photos/sakura.JPG',
