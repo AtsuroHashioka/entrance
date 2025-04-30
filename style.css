@@ -1,0 +1,94 @@
+/* ルート要素*/
+html {
+    font-size: 62.5%
+}
+
+/*ベーススタイル */
+body {
+    font-family: 'Yu Mincho', sans-serif;
+    font-size: 2rem;
+    line-height: 1.5; /*行間*/
+    color: #000;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/*ヘッダー*/
+header {
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    /* 背景設定 */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* アニメーション速度 */
+    transition: background-image 2s ease-in-out;
+    /* フォント */
+    font-family: 'Roboto', sans-serif;
+    font-weight: nomal;
+}
+
+/* タイトル */
+#title-line-1 {
+    font-size: 8rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0,1);
+    padding-top: 24rem;
+}
+
+#title-line-2 {
+    font-size: 9rem;
+    text-align: center;
+    align-content: center;
+    color: #000;
+    background-color: #fff;
+    width:fit-content;
+    padding: 1.5rem 4.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12rem;
+}
+
+/* ヘッダリンクボタン */
+.buttons {
+    padding: 4rem;
+    
+    /* ボタンの配置 */
+    display: flex;
+    justify-content: center;
+    align-items: center;/*高さ*/
+}
+
+/*各ボタン設定*/
+.header-button {
+    /* フォント */
+    font-size: 3rem;
+    font-family: 'Century Gothic', sans-serif;
+    color: #ffffff;
+
+    /*ボタンデザイン*/
+    background-color: rgba(50, 50, 50, 0.5); /* 半透明の背景 */
+    padding: 0.5rem 1.5rem;
+    margin: 0 1rem;/*ボタン同士の間隔*/
+    border: 0rem;
+    border-radius: 1rem;
+
+    /* アニメーション設定 */
+    transition-property: transform, background-color, color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+
+    /* その他 */
+    cursor: pointer;/* カーソル形状 */
+    text-decoration: none;
+}
+
+/*ボタン接触時*/
+.header-button:hover {
+    transform: perspective(10rem) translateZ(0.5rem) translateY(-0.5rem);
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.75);
+}
