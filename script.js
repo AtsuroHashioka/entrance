@@ -16,6 +16,7 @@ const images = [
     'photos/sky.JPG',
     'photos/soni.JPG',
     'photos/sunset.JPG',
+    'photos/thai.JPG',
     'photos/ukimi.JPG',
     'photos/ume.JPG',
     // 必要に応じて追加
