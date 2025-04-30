@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Atsuro Hashioka's ENTRANCE Page">
+    <title>HOME</title>
+    <link rel="stylesheet" href="./test.css">
+</head>
+
+<body>
+    <header>  
+        
+        <div id="title-line-1">Atsuro Hashioka's</div>
+        <div id="title-line-2">ENTRANCE</div>
+        
+        <nav>
+            <div class="buttons">
+                <a href="index.html" class="header-button">TOP</a>
+                <a href="works.html" class="header-button">WORKS</a>
+                <a href="photos.html" class="header-button">PHOTOS</a>
+                <a href="songs.html" class="header-button">SONGS</a>
+                <a href="favorites.html" class="header-button">FAVORITES</a>
+            </div>
+        </nav>
+    </header>
+</body>
+
+<script>
+    const entranceDiv = document.getElementById('title-line-2');
+    const text = entranceDiv.textContent;
+    entranceDiv.innerHTML = ''; // 元のテキストをクリア
+  
+    const animationDuration = 0.2; // アニメーションの基本 duration（秒）
+    const delayIncrement = 0.5; // 文字ごとの遅延増加量（秒）
+  
+    for (let i = 0; i < text.length; i++) {
+      const span = document.createElement('span');
+      span.classList.add('char');
+      span.textContent = text[i];
+      span.style.animation = `fadeIn ${animationDuration}s ease-in-out ${delayIncrement * (i + 1)}s forwards`;
+      entranceDiv.appendChild(span);
+    }
+</script>  
+
+<!-- <script src="./script.js"></script> -->
+
+</html>
