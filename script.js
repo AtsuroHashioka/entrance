@@ -3,7 +3,10 @@ const images = [
     'photos/arima.JPG',
     'photos/beach.JPG',
     'photos/books.JPG',
+    'photos/cosmos.JPG',
     'photos/dish.JPG',
+    'photos/fall.JPG',
+    'photos/frog.JPG',
     'photos/graduate.JPG',
     'photos/hiroshima.JPG',
     'photos/momiji.JPG',
@@ -13,6 +16,7 @@ const images = [
     'photos/sky.JPG',
     'photos/soni.JPG',
     'photos/sunset.JPG',
+    'photos/ukimi.JPG',
     'photos/ume.JPG',
     // 必要に応じて追加
 ];
