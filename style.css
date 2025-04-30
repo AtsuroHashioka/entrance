@@ -52,15 +52,16 @@ header {
     margin-bottom: 12rem;
 }
 
+/* フェードインする文字の初期状態 */
 .char {
     opacity: 0; /* 最初は非表示 */
-  }
+}
   
-  /* アニメーションの定義 */
-  @keyframes fadeIn {
+/* タイトル2行目のアニメーションの定義 */
+@keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
-  }
+}
 
 /* ヘッダリンクボタン */
 .buttons {

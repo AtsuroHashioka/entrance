@@ -39,6 +39,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }, 3000); // 3000ミリ秒（3秒）ごとに変更
 });
 
+// タイトル2行目のアニメーション
 const TL2 = document.getElementById('title-line-2');
 const text = TL2.textContent;
 TL2.innerHTML = ''; // 元のテキストをクリア
