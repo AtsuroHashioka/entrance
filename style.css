@@ -50,6 +50,11 @@ header {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 12rem;
+
+    /* ホバーアニメーション設定 */
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
 }
 
 /* 2行目文字 */
