@@ -59,6 +59,10 @@ header {
     cursor:pointer;
     display: inline-block;
 }
+
+.char :hover{
+    transform: translateY(-1.5rem);
+}
   
 /* タイトル2行目のアニメーションの定義 */
 @keyframes fadeIn {
