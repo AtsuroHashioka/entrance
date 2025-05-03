@@ -51,11 +51,6 @@ header {
     margin-right: auto;
     margin-bottom: 12rem;
     display: flex;
-
-    /* ホバーアニメーション設定 */
-    transition-property: transform;
-    transition-duration: 0.5s;
-    transition-timing-function: ease;
 }
 
 /* 2行目文字 */
@@ -63,10 +58,6 @@ header {
     opacity: 0; /* 最初は非表示 */
     transform: translateY(-1.5rem);
     cursor:pointer;
-}
-
-.char :hover{
-    transform: translateY(-1.5rem);
 }
   
 /* タイトル2行目のアニメーションの定義 */
