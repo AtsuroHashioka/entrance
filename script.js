@@ -48,9 +48,9 @@ const animationDuration = 0.5; // アニメーションの基本 duration（秒�
 const delayIncrement = 0.1; // 文字ごとの遅延増加量（秒）
 
 for (let i = 0; i < text.length; i++) {
-    const span = document.createElement('span');
-    span.classList.add('char');
-    span.textContent = text[i];
-    span.style.animation = `fadeIn ${animationDuration}s ease-in ${delayIncrement * (i + 1)}s forwards`;
-    TL2.appendChild(span);
+    const div = document.createElement('div');
+    div.classList.add('char');
+    div.textContent = text[i];
+    div.style.animation = `fadeIn ${animationDuration}s ease-in ${delayIncrement * (i + 1)}s forwards`;
+    TL2.appendChild(div);
 }
