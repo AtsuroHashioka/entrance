@@ -56,15 +56,21 @@ header {
 /* 2行目文字 */
 .char {
     opacity: 0; /* 最初は非表示 */
-    transform: translateY(-1.5rem);
+    transform: translateY(1.5rem);
     cursor:pointer;
 }
+
+/* .char:hover{
+    transform: scale(1.5);
+    transition: transform 0.3s ease;
+    z-index: 1; 
+} */
   
 /* タイトル2行目のアニメーションの定義 */
 @keyframes fadeIn {
     from {
         opacity: 0; 
-        transform: translateY(-1.5rem);
+        transform: translateY(1.5rem);
     }
     to {
         opacity: 1; 
