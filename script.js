@@ -30,12 +30,12 @@ function getRandomImage() {
 // ランダムに1つ選んで適用
 window.addEventListener("DOMContentLoaded", () => {
     // ヘッダーの背景をランダムに設定（初期設定）
-    const headerElement = document.querySelector('header');
-    headerElement.style.backgroundImage = `url(${getRandomImage()})`;
+    const titleElement = document.getElementById('title');
+    titleElement.style.backgroundImage = `url(${getRandomImage()})`;
 
     // スライドショーを一定間隔で実行
     setInterval(() => {
-        headerElement.style.backgroundImage = `url(${getRandomImage()})`;
+        titleElement.style.backgroundImage = `url(${getRandomImage()})`;
     }, 3000); // 3000ミリ秒（3秒）ごとに変更
 });
 
