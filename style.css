@@ -127,7 +127,7 @@ body {
 /* content が表示状態になった時のスタイル */
 .content.is-visible {
     opacity: 1; /* 不透明にする */
-    transform: translateY(0); /* 元の位置に戻す */
+    transform: translateX(0); /* 元の位置に戻す */
 }
 
 .content-title {
