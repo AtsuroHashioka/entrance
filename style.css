@@ -6,7 +6,7 @@ html {
 /*ベーススタイル */
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     line-height: 1.5; /*行間*/
     color: #000;
     background-color: #ffffff;
@@ -118,16 +118,6 @@ body {
     background: #ffffff;
     padding: 2rem 2rem;
     margin: 2rem 0rem;
-
-    opacity: 0; /* 最初は非表示 */
-    transform: translateX(-3rem); /* 最初は少し下にずらす */
-    transition: opacity 1.5s ease-out, transform 1.5s ease-out; /* アニメーションの時間を定義 */
-}
-
-/* content が表示状態になった時のスタイル */
-.content.is-visible {
-    opacity: 1; /* 不透明にする */
-    transform: translateX(0); /* 元の位置に戻す */
 }
 
 .content-title {
@@ -140,9 +130,8 @@ body {
 /* プロフィールセクション全体 */
 #profile {
     display: flex;
-    align-items: flex-start;
-    gap: 5rem;
-    padding: 4rem 2rem;
+    gap: 4rem;
+    padding: 4rem 2rem 0rem;
     background-color: #ffffff;
 }
 
@@ -152,13 +141,11 @@ body {
     width: 30rem;
     border-radius: 0.5rem;
     object-fit: cover;
-    border: 0.1rem solid #eee;
     flex-shrink: 0;
-    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.08);
 }
 
 /* 名前とテーブルをまとめるコンテナ */
-.profile-info {
+#profile-info {
     flex-grow: 1;
     display: flex; /* 名前とテーブルを縦に並べるためにflexboxを使用 */
     flex-direction: column;
@@ -168,12 +155,12 @@ body {
 /* 名前 */
 #profile-name {
     font-size: 4.5rem; /* 名前を大きく表示 */
-    font-weight: bold; /* 太字 */
-    color: #333;
-    margin-bottom: 2.5rem; /* 名前とテーブルの間隔 */
+    font-weight: 500; /* 太字 */
+    color: #000;
+    margin-bottom: 2rem; /* 名前とテーブルの間隔 */
     letter-spacing: 0.1rem; /* 文字間隔を調整 */
     border-bottom: 0.2rem solid #eee; /* 名前の下に細い下線 */
-    padding-bottom: 1rem;
+    padding-bottom: 0.8rem;
     width: 100%; /* 下線が親要素の幅に広がるように */
 }
 
@@ -181,8 +168,6 @@ body {
 #profile table {
     width: 100%; /* 親要素の幅に合わせる */
     border-collapse: collapse;
-    font-size: 1.8rem;
-    line-height: 1.6;
 }
 
 #profile table tr {
@@ -201,14 +186,14 @@ body {
 /* 項目名（左側のセル）のスタイル */
 #profile table tr td:first-child {
     font-weight: 500;
-    color: #555;
+    color: #666;
     width: 12rem;
     padding-left: 0;
 }
 
 /* 値（右側のセル）のスタイル */
 #profile table tr td:last-child {
-    color: #333;
+    color: #000;
     padding-right: 0;
 }
 
@@ -249,4 +234,4 @@ body {
     #profile table tr td:first-child {
         width: 10rem;
     }
-}
+} 

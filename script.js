@@ -37,28 +37,6 @@ window.addEventListener("DOMContentLoaded", () => {
     setInterval(() => {
         titleElement.style.backgroundImage = `url(${getRandomImage()})`;
     }, 3000); // 3000ミリ秒（3秒）ごとに変更
-
-    //コンテンツスクロールアニメーション
-    const contents = document.querySelectorAll('.content');
-
-    const checkIfVisible = () => {
-        contents.forEach(content => {
-            const contentTop = content.getBoundingClientRect().top;
-            const screenHeight = window.innerHeight;
-
-            // 要素の上端が画面の10%～90%の間に入ったら表示
-            if (contentTop < screenHeight * 1.0 && contentTop > -content.offsetHeight * 0.95) {
-                content.classList.add('is-visible');
-            } else {
-                // 画面外に出たら非表示に戻す（繰り返したい場合）
-                content.classList.remove('is-visible');
-            }
-        });
-    };
-
-    // ロード時とスクロール時にチェック
-    window.addEventListener('scroll', checkIfVisible);
-    checkIfVisible(); // 初回ロード時にもチェック
 });
 
 // タイトル2行目のアニメーション
