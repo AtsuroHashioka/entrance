@@ -128,7 +128,6 @@ body {
 #side-bar nav{
     position: sticky; /* サイドバーをstickyに設定 */
     top: 2rem;          /* スクロール時にビューポートの上端に固定 */
-    overflow-y: auto; /* サイドバーのコンテンツが高さ制限を超えた場合にスクロールバーを表示 */
 }
 
 /* サイドバー内のリスト */
@@ -145,7 +144,6 @@ body {
 #side-bar a {
     text-decoration: none;
     color: #fff;
-    font-size: 1.8rem;
     transition: color 0.3s;
 }
 
@@ -290,3 +288,28 @@ body {
         width: 10rem;
     }
 } 
+
+/* フッターのデザイン */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10rem 2rem; /* 上下左右のパディング */
+}
+
+.footer-content p {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem; /* リンクとの間隔 */
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.6rem;
+    margin: 0 1.5rem; /* リンク同士の間隔 */
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #007acc; /* ホバー時の色 */
+}
