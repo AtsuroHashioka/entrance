@@ -27,12 +27,14 @@ body {
     transition: background-image 2s ease-in-out;
     /* フォント */
     font-weight: nomal;
+
+    padding-bottom: 4rem;
 }
 
 #title-line-1 {
     font-size: 5rem;
     text-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0,1);
-    padding-top: 24rem;
+    padding-top: 28rem;
 }
 
 #title-line-2 {
@@ -109,9 +111,45 @@ body {
     background-color: rgba(255, 255, 255, 0.75);
 }
 
+#layout {
+    display: flex;
+    flex-direction: row;
+}
+
+/* サイドバーのデザイン */
+#side-bar {
+    width: 80rem;
+    background-color: #666;
+    padding: 2rem;
+    height: fill;
+}
+
+/* サイドバー内のリスト */
+#side-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#side-bar li {
+    margin-bottom: 1.5rem;
+}
+
+#side-bar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8rem;
+    transition: color 0.3s;
+}
+
+#side-bar a:hover {
+    color: #007acc;
+}
+
 #contents {
     margin: 0;
-    padding: 2rem 6rem;
+    padding: 2rem 3rem;
+    flex-grow: 1;
 }
 
 .content {
