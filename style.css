@@ -111,6 +111,7 @@ body {
     background-color: rgba(255, 255, 255, 0.75);
 }
 
+/* サイドバーとメインコンテンツ */
 #layout {
     display: flex;
     flex-direction: row;
@@ -121,7 +122,13 @@ body {
     width: 80rem;
     background-color: #666;
     padding: 2rem;
-    height: fill;
+}
+
+/* サイドバー内のナビゲーション */
+#side-bar nav{
+    position: sticky; /* サイドバーをstickyに設定 */
+    top: 2rem;          /* スクロール時にビューポートの上端に固定 */
+    overflow-y: auto; /* サイドバーのコンテンツが高さ制限を超えた場合にスクロールバーを表示 */
 }
 
 /* サイドバー内のリスト */
@@ -146,6 +153,7 @@ body {
     color: #007acc;
 }
 
+/* メインコンテンツ */
 #contents {
     margin: 0;
     padding: 2rem 3rem;
@@ -176,7 +184,7 @@ body {
 }
 
 /* プロフィールセクション全体 */
-#profile {
+#profile-container {
     display: flex;
     gap: 4rem;
     padding: 4rem 2rem 0rem;
