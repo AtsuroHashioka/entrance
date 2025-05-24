@@ -127,6 +127,16 @@ body {
     padding-bottom: 1rem;
 }
 
+.content-head{
+    font-size: 3rem; /* 名前を大きく表示 */
+    font-weight: nomal; /* 太字 */
+
+}
+
+.content p{
+    padding-left: 4rem
+}
+
 /* プロフィールセクション全体 */
 #profile {
     display: flex;
@@ -156,7 +166,6 @@ body {
 #profile-name {
     font-size: 4.5rem; /* 名前を大きく表示 */
     font-weight: 500; /* 太字 */
-    color: #000;
     margin-bottom: 2rem; /* 名前とテーブルの間隔 */
     letter-spacing: 0.1rem; /* 文字間隔を調整 */
     border-bottom: 0.2rem solid #eee; /* 名前の下に細い下線 */
