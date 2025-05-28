@@ -55,7 +55,6 @@ body {
 .char {
     opacity: 0; /* 最初は非表示 */
     transform: translateY(-1.5rem);
-    cursor:pointer;
 }
   
 /* タイトル2行目のアニメーションの定義 */
@@ -122,6 +121,7 @@ body {
     width: 80rem;
     background-color: #666;
     padding: 2rem;
+    font-size: 2rem;
 }
 
 /* サイドバー内のナビゲーション */
@@ -144,11 +144,25 @@ body {
 #side-bar a {
     text-decoration: none;
     color: #fff;
-    transition: color 0.3s;
+    display:inline-block;
+    position: relative;
+    overflow: hidden;
 }
 
-#side-bar a:hover {
-    color: #007acc;
+#side-bar a:after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1rem;
+    background-color: #fff;
+    transform: translate(-100%,0);
+    transition: transform cubic-bezier(0.215,0.61,0.355,1) 0.4s;
+    content: "";
+}
+
+#side-bar a:hover:after {
+    transform: translate(0,0);
 }
 
 /* メインコンテンツ */
@@ -251,7 +265,7 @@ body {
 }
 
 /* レスポンシブ対応 */
-@media (max-width: 768px) {
+@media (max-width: 0rem) {
     #profile {
         flex-direction: column;
         align-items: center;
