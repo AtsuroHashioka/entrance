@@ -303,6 +303,50 @@ body {
     }
 } 
 
+.timeline {
+  position: relative;
+  padding-left: 3rem; /* 線と点の左側スペース */
+  margin: 4rem 0;
+  list-style: none;
+  border-left: 3px solid #ccc; /* 縦線 */
+}
+
+.timeline li {
+  position: relative;
+  margin-bottom: 4rem;
+  padding-left: 2rem; /* 点→内容の余白 */
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  top: 0.6rem; /* タイトルと揃える */
+  left: -1.6rem; /* 線の中心に点を合わせる */
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: #666;
+  border-radius: 50%;
+}
+.timeline-meta {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 0.4rem;
+}
+
+.timeline-title {
+  font-size: 2rem;
+  color: #222;
+  margin: 0;
+}
+
+.timeline-desc {
+  font-size: 1.8rem;
+  color: #444;
+  margin: 0.3rem 0 0;
+}
+
+
 /* フッターのデザイン */
 footer {
     background-color: #333;
